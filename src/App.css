@@ -1,13 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  background-color: rgb(0, 0, 0);
+  
+  
 
 }
 .header {
   width: 100%;
   height: 90px;
   background-color: black;
-  color: white;
+  color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   padding-left: 20px;
@@ -17,4 +20,23 @@
 
 .header p {
   margin: 0px 6px;
+}
+
+.presentation h1 {
+  color:rgb(255, 255, 255);
+  font-family: open sans;
+  margin-top: 120px;
+  margin-left: 55%;
+  font-size:2,5ch;
+  
+}
+
+.presentation p {
+  color:rgb(255, 255, 255);
+  font-family: open sans;
+  margin-left: 55%;
+  text-align: justify;
+  font-size:smaller;
+  font-weight: 350;
+  
 }

@@ -1,16 +1,14 @@
 import "./App.css"
 import Header from "./components/Header"
+import Presentation from "./components/Presentation"
+
 
 const App = () => {
   return (
-    <div>
+    <div className="home">
       <Header />
-      <p>
-        qualquer coisa
-
-      </p>
-      <p>outra coisa</p>
-
+      <Presentation />  
+    
     </div>
   )
 }
