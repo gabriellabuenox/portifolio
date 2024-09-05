@@ -1,15 +1,22 @@
+import React from "react"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css"
-import Header from "./components/Header"
-import Presentation from "./components/Presentation"
+import Home from "./pages/Home"
+import Texto from "./pages/Texto"
+import Header from "./components/Header";
+
 
 
 const App = () => {
   return (
-    <div className="home">
-      <Header />
-      <Presentation />  
-    
-    </div>
+    <Router>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="textPage" element={<Texto />} />
+      </Routes>
+    </Router>
+
   )
 }
 
