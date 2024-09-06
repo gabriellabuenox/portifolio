@@ -55,9 +55,14 @@ body {
   width: calc(50% - 40px); /* 50% da largura menos as margens */
   flex-basis: calc(50% - 50px); /* Garante que cada item tenha 50% da linha */
   border: 1px solid white ;
+  cursor: pointer;
 }
 
 .textP {
   font-family: open sans;
   color: rgb(255, 255, 255);
+}
+
+.menuItem {
+  cursor: pointer;
 }
