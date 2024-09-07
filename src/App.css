@@ -5,61 +5,88 @@
 
 body {
   background-color: rgb(0, 0, 0);
+  color: white;
+  width: 100%;
+  margin: 0
 }
 
 .header {
-  width: 100%;
-  height: 90px;
+  /* width: 100%; */
+  height: 140px;
+  /* margin-left: 30px; */
   background-color: black;
-  color: rgb(88, 88, 88);
+  color: rgba(255, 255, 255, 0.4);
   display: flex;
   align-items: center;
   padding-left: 20px;
+  /* background-color: green; */
 }
 
 .header p {
   margin: 0px 6px;
 }
 
+.home {
+  /* background-color: pink; */
+  width: 100%;
+}
+
+.presentation {
+  margin: 20px;
+}
+
 .presentation h1 {
   color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 120px;
-  margin-left: 55%;
+  margin-left: 52%;
   font-size: 2.5ch;
   font-weight: bold;
+
+  
 }
 
 .presentation p {
   color: rgb(255, 255, 255);
   font-family: open sans;
-  margin-left: 55%;
-  text-align: justify;
+  margin-left: 52%;
   font-size: smaller;
-  font-weight: 350;
+  font-weight: 370;
   margin-bottom: 250px;
+  line-height: 1.5; 
 }
 
 .textosContainer {
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(91, 3, 255); */
   font-family: open sans;
   font-size: small;
-  padding: 1%;
+  padding: 15px;
   display: flex;
   flex-wrap: wrap; 
-  width: 100%;
+  /* width: 100%; */
+  justify-content: center;
   
 }
 
 .textDiv {
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(255, 0, 0); */
   padding: 10px;
-  margin: 10px;
   width: calc(50% - 40px); 
-  flex-basis: calc(50% - 50px); 
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
+  margin: 5px;
+  /* margin-right: 15px;
+  margin-bottom: 15px; */
 }
+
+@media screen and (max-width: 550px ) {
+  .textDiv {
+    /* background-color: green; */
+    width: 100%;
+  }
+}
+
+
 
 .textP {
   font-family: open sans;
@@ -69,11 +96,26 @@ body {
 .menuItem {
   cursor: pointer;
   font-style: normal;
-  color: (88, 88, 88);
+  color: rgba(255, 255, 255, 0.4);
   transition: all 0.3s ease;
+  font-size: 14px;
 }
 
 .menuItem.selected {
   font-style:italic;/* Deixa o texto em itálico */
   color: rgba(255, 255, 255, 0.809); /* Muda a cor do texto */
+}
+
+.mainTextContainer {
+  width: 100%;
+}
+
+
+.mainTextContainer h1 {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  padding-left: 30px;
+  /* background-color: black; */
 }

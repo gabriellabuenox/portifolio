@@ -10,13 +10,14 @@ import Header from "./components/Header";
 const App = () => {
   return (
     <Router>
+      <div>
       <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="textPage" element={<Texto />} />
       </Routes>
+      </div>
     </Router>
-
   )
 }
 

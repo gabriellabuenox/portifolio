@@ -20,16 +20,21 @@ const Textos = () => {
     }, []);
 
     return (
-        <div className="textosContainer">
-            {meusTextos.map((texto, index) => (
-                <div 
-                    key={index} 
-                    className="textDiv" 
-                    onClick={() => navigateText(texto)} // Passa o texto para a função
-                >
-                    <p className="textP">{texto}</p>
-                </div>
-            ))}
+        <div className="mainTextContainer">
+            <h1> ✷ meus textos</h1>
+
+            <div className="textosContainer">
+
+                {meusTextos.map((texto, index) => (
+                    <div
+                        key={index}
+                        className="textDiv"
+                        onClick={() => navigateText(texto)} // Passa o texto para a função
+                    >
+                        <p className="textP">{texto}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };
